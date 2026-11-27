@@ -1,0 +1,7 @@
+{
+  "keywords": ["roofing"],
+  "states": ["TX"],
+  "onlyNew": true,
+  "monitorName": "roofing-texas",
+  "maxResults": 200
+}

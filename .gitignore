@@ -1,0 +1,6 @@
+*.csv
+*.out
+*.md.out
+__pycache__/
+.env
+transcripts/
