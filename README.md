@@ -35,6 +35,12 @@ Each run also has a small start fee ($0.001 to $0.005, shown on each Store page)
 - [`youtube-transcripts/preview_channel.py`](youtube-transcripts/preview_channel.py) lists a channel's videos without fetching transcripts, so you can check the range first.
 - [`youtube-transcripts/skipped_videos.py`](youtube-transcripts/skipped_videos.py) runs asynchronously and reads which videos had no captions in your language. Those videos are not charged.
 
+### Jobs feed
+
+- [`jobs-feed/one_call.py`](jobs-feed/one_call.py) searches every system for remote data engineer roles and prints one line per job with its match score, seniority and salary range.
+- [`jobs-feed/new_jobs_to_csv.py`](jobs-feed/new_jobs_to_csv.py) runs in feed mode and appends only jobs it has not returned before to `jobs.csv`. Schedule it once a day.
+- [`jobs-feed/named_companies.py`](jobs-feed/named_companies.py) reads only the boards of the companies you name.
+
 ## Use them from Claude, Cursor or another MCP client
 
 Every API here also works as an MCP tool through Apify's MCP server. Seven ready made server listings, with setup steps and example prompts, live in [musama000/talcoe-mcp-servers](https://github.com/musama000/talcoe-mcp-servers) and in the official MCP Registry under `io.github.musama000`.
